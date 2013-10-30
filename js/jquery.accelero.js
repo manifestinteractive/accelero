@@ -97,12 +97,13 @@
 
 			if(window.DeviceMotionEvent && (this.options.controlMethod == 'auto' || this.options.controlMethod == 'motion'))
 			{
-				window.ondevicemotion = function(event) {
+				window.addEventListener('devicemotion', function(event){
 
 					$that.motion.ax = event.accelerationIncludingGravity.x * 5;
 					$that.motion.ay = event.accelerationIncludingGravity.y * 5;
 					$that.motion.az = event.accelerationIncludingGravity.z * 5;
-				}
+
+				}, false);
 
 				clearInterval(this.timer);
 				this.timer = setInterval($.proxy($that._track, $that), 25);

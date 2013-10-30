@@ -41,17 +41,16 @@ body
 
 .square {
 	position: absolute;
-	left: 50px;
 	width: 50px;
 	height: 50px;
-	background: rgb(222,239,255); /* Old browsers */
-	background: -moz-radial-gradient(center, ellipse cover,  rgba(222,239,255,1) 0%, rgba(152,190,222,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(222,239,255,1)), color-stop(100%,rgba(152,190,222,1))); /* Chrome,Safari4+ */
-	background: -webkit-radial-gradient(center, ellipse cover,  rgba(222,239,255,1) 0%,rgba(152,190,222,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-radial-gradient(center, ellipse cover,  rgba(222,239,255,1) 0%,rgba(152,190,222,1) 100%); /* Opera 12+ */
-	background: -ms-radial-gradient(center, ellipse cover,  rgba(222,239,255,1) 0%,rgba(152,190,222,1) 100%); /* IE10+ */
-	background: radial-gradient(ellipse at center,  rgba(222,239,255,1) 0%,rgba(152,190,222,1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#deefff', endColorstr='#98bede',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	background: rgb(176,212,227); /* Old browsers */
+	background: -moz-linear-gradient(left,  rgba(176,212,227,1) 0%, rgba(136,186,207,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(176,212,227,1)), color-stop(100%,rgba(136,186,207,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(176,212,227,1) 0%,rgba(136,186,207,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(176,212,227,1) 0%,rgba(136,186,207,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(176,212,227,1) 0%,rgba(136,186,207,1) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(176,212,227,1) 0%,rgba(136,186,207,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b0d4e3', endColorstr='#88bacf',GradientType=1 ); /* IE6-9 */
 	-webkit-transform: translate3d(0,0,0);
 	-moz-transform: translate3d(0,0,0);
 	-ms-transform: translate3d(0,0,0);
