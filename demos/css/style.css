@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+html,body
+{
+    width: 100%;
+    height: 100%;
+}
+body
+{
+    background-color: #222;
+}
+.layers {
+    position: relative;
+    width: 1000px;
+    height: 600px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 15%;
+    border: 10px solid rgba(0,0,0,0.25);
+    max-width: 1700px;
+    max-height: 700px;
+}
+.layer {
+    position: absolute;
+    width: 1600px;
+    height: 800px;
+}
+.layers .layer-4
+{
+    background: url(../images/demo1/layer-4.png) no-repeat center center;
+}
+.layers .layer-3
+{
+    background: url(../images/demo1/layer-3.png) no-repeat center center;
+}
+.layers .layer-2
+{
+    background: url(../images/demo1/layer-2.png) no-repeat center center;
+}
+.layers .layer-1
+{
+    background: url(../images/demo1/layer-1.jpg) no-repeat center center;
+}
+.info
+{
+    z-index: 25;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+.info a
+{
+    color: white;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 1px 1px #000;
+}
+
+@media (max-width: 1024px) {
+    .layers {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .layers {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border: 0;
+        max-width: 750px;
+        max-height: 350px;
+    }
+    .layers .layer-4
+    {
+        background: url(../images/demo1/layer-4-small.png) no-repeat center center;
+    }
+    .layers .layer-3
+    {
+        background: url(../images/demo1/layer-3-small.png) no-repeat center center;
+    }
+    .layers .layer-2
+    {
+        background: url(../images/demo1/layer-2-small.png) no-repeat center center;
+    }
+    .layers .layer-1
+    {
+        background: url(../images/demo1/layer-1-small.jpg) no-repeat center center;
+    }
+}
